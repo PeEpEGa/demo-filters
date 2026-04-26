@@ -88,5 +88,18 @@ module.exports = {
 		react: {
 			version: 'detect'
 		}
-	}
+	},
+	overrides: [
+		{
+			files: ['src/shared/components/ui/**/*', 'src/shared/lib/**/*'],
+			rules: {
+				'prefer-arrow/prefer-arrow-functions': 'off',
+				'func-style': 'off',
+				'i18next/no-literal-string': 'off',
+				'no-use-before-define': 'off',
+				camelcase: 'off',
+				'react-refresh/only-export-components': 'off'
+			}
+		}
+	]
 }
