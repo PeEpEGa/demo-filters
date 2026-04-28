@@ -1,3 +1,3 @@
-export const enum FilterType {
+export enum FilterType {
 	OPTION = 'OPTION'
 }
