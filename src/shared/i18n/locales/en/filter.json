@@ -1,14 +1,14 @@
 {
-    "category_filters": {
-        "open":"Open category filter",
-        "modal_title": "Filter",
-        "apply": "Apply",
-        "clear_all": "Clear all parameters",
-        "confirm_title": "Do you want to apply new filter?",
-        "confirm_description": "Your selected filters will be saved.",
-        "confirm": "Apply new filter",
-        "cancel": "Use old filter",
-        "error": "Failed to load filters",
-        "retry": "Try again"
-    }
+	"category_filters": {
+		"open": "Open category filter",
+		"modal_title": "Filter",
+		"apply": "Apply",
+		"clear_all": "Clear all parameters",
+		"confirm_title": "Do you want to apply new filter?",
+		"confirm_description": "Your selected filters will be saved.",
+		"confirm": "Apply new filter",
+		"cancel": "Use old filter",
+		"error": "Failed to load filters",
+		"retry": "Try again"
+	}
 }
