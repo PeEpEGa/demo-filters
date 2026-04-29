@@ -4,7 +4,7 @@ import { Button } from '@/shared/components/ui/button'
 import { ModalName } from '@/shared/enums/modal-name-enum'
 import { useModal } from '@/shared/hooks/use-modal'
 
-import CategoryFiltersModal from './category-filters-modal'
+import { CategoryFiltersModal } from './category-filters-modal'
 
 export const CategoryFiltersButton = () => {
 	const { t } = useTranslation('filter')
