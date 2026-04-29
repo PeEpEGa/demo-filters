@@ -98,7 +98,9 @@ module.exports = {
 				'i18next/no-literal-string': 'off',
 				'no-use-before-define': 'off',
 				camelcase: 'off',
-				'react-refresh/only-export-components': 'off'
+				'react-refresh/only-export-components': 'off',
+				'no-implicit-coercion': 'off',
+				eqeqeq: 'off'
 			}
 		}
 	]
