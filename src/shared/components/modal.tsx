@@ -1,12 +1,15 @@
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 
+import { cn } from '../lib/utils'
+
 interface ModalProps {
 	isOpen: boolean
 	onClose: () => void
 	children: React.ReactNode
 	closeOnBackdrop?: boolean
 	closeOnEscape?: boolean
+	className?: string
 }
 
 const Modal = ({
@@ -14,7 +17,8 @@ const Modal = ({
 	onClose,
 	children,
 	closeOnBackdrop = true,
-	closeOnEscape = true
+	closeOnEscape = true,
+	className
 }: ModalProps) => {
 	const overlayRef = useRef<HTMLDivElement>(null)
 
@@ -62,7 +66,8 @@ const Modal = ({
 		<div
 			ref={overlayRef}
 			onClick={handleBackdropClick}
-			className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+			className={cn('fixed inset-0 z-50 backdrop-blur-[25px]', className)}
+			style={{ backgroundColor: 'rgba(27, 27, 27, 0.3)' }}
 			aria-modal="true"
 			role="dialog"
 		>
